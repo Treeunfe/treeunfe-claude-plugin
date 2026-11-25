@@ -36,7 +36,7 @@ Requisito: Python 3 (a skill usa só a biblioteca padrão). Sem Python, ela lê 
 ## Instalação no Claude Desktop ou claude.ai
 
 1. Em **Conectores**, adicione o servidor MCP `https://mcp.treeunfe.com.br/mcp` e faça o login.
-2. Baixe o ZIP da skill desejada na página de [Releases](../../releases) e envie em **Configurações > Capacidades > Skills**. As skills referenciam `_compartilhado/seguranca.md`; no app, as regras de segurança já estão resumidas dentro de cada skill.
+2. Baixe o ZIP da skill desejada na página de [Releases](../../releases) e envie em **Configurações > Capacidades > Skills**. Atenção: as novas skills referenciam `_compartilhado/seguranca.md`, que não vai dentro do ZIP de uma skill isolada; no app, prefira o plugin completo ou inclua essa pasta no ZIP.
 
 ## Como usar
 
