@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.png" alt="Treeunfe" width="120"></p>
+
 # Treeunfe para Claude
 
 Plugin com o **conector MCP da Treeunfe** e a skill **classificar-produtos-treeunfe**, que ajuda a classificar os produtos do seu cadastro na Reforma Tributária (CST e cClassTrib do IBS/CBS), conferir NCM e CEST e, com a sua aprovação, gravar a classificação nas regras fiscais da empresa.

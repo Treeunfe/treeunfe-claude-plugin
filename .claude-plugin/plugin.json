@@ -1,6 +1,24 @@
 {
   "name": "treeunfe",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Conector MCP da Treeunfe e skills para classificar produtos (NCM, cClassTrib, CEST), diagnosticar rejeições de NF-e, corrigir cadastros e reemitir notas.",
-  "author": { "name": "Treeunfe" }
+  "author": {
+    "name": "Treeunfe"
+  },
+  "displayName": "Treeunfe",
+  "icon": "./logo.png",
+  "homepage": "https://www.treeunfe.com.br",
+  "repository": "https://github.com/Treeunfe/treeunfe-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "nfe",
+    "nota-fiscal",
+    "reforma-tributaria",
+    "cclasstrib",
+    "ibs-cbs",
+    "ncm",
+    "mcp",
+    "treeunfe"
+  ],
+  "documentationUrl": "https://docs.treeunfe.com.br/plataforma/mcp/visao-geral"
 }

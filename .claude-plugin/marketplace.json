@@ -1,6 +1,9 @@
 {
   "name": "treeunfe",
-  "owner": { "name": "Treeunfe" },
+  "owner": {
+    "name": "Treeunfe"
+  },
+  "description": "Plugins da Treeunfe para Claude: conector MCP e skills de NF-e e Reforma Tributária",
   "plugins": [
     {
       "name": "treeunfe",
