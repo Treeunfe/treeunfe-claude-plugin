@@ -4,6 +4,21 @@ Plugin com o **conector MCP da Treeunfe** e a skill **classificar-produtos-treeu
 
 > A skill **sugere**; o contador **aprova**. A responsabilidade fiscal continua com a empresa. O MCP opera sempre em **produção**: toda gravação tem efeito real nas próximas notas.
 
+## Skills incluídas
+
+| Skill | O que faz | Grava dados? |
+|---|---|---|
+| `classificar-produtos-treeunfe` | Sugere CST/cClassTrib (IBS/CBS), confere NCM e CEST dos produtos | Só regras fiscais, com "sim" |
+| `diagnosticar-rejeicao` | Explica por que as notas foram rejeitadas e o que corrigir | Não |
+| `corrigir-cep-clientes` | Acha e corrige CEP de clientes em lote | Só clientes, com "sim" |
+| `corrigir-e-reemitir` | Corrige a origem do erro e reemite notas rejeitadas | Cadastros e emissão, aprovações separadas |
+| `auditar-cadastros` | Varre clientes, produtos e regras atrás de erros antes que virem rejeição | Não |
+| `checklist-pre-emissao` | Confere empresa, destinatário, itens e regra fiscal antes de emitir | Emissão, com "sim" |
+
+Todas seguem as mesmas [regras de segurança](skills/_compartilhado/seguranca.md): leitura livre, gravação só com confirmação, ações irreversíveis com confirmação reforçada.
+
+> **Status:** as skills de rejeição, CEP, reemissão, auditoria e checklist foram escritas a partir da documentação do MCP e ainda precisam ser validadas contra uma conta real. Elas descobrem os campos reais lendo um registro antes de gravar.
+
 ## Instalação no Claude Code
 
 ```bash
@@ -21,7 +36,7 @@ Requisito: Python 3 (a skill usa só a biblioteca padrão). Sem Python, ela lê 
 ## Instalação no Claude Desktop ou claude.ai
 
 1. Em **Conectores**, adicione o servidor MCP `https://mcp.treeunfe.com.br/mcp` e faça o login.
-2. Baixe `classificar-produtos-treeunfe.zip` na página de [Releases](../../releases) e envie em **Configurações > Capacidades > Skills**.
+2. Baixe o ZIP da skill desejada na página de [Releases](../../releases) e envie em **Configurações > Capacidades > Skills**. As skills referenciam `_compartilhado/seguranca.md`; no app, as regras de segurança já estão resumidas dentro de cada skill.
 
 ## Como usar
 
