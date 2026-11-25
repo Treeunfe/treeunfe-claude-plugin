@@ -1,0 +1,6 @@
+{
+  "name": "treeunfe",
+  "version": "0.1.0",
+  "description": "Conector MCP da Treeunfe e skill de classificação de produtos (NCM, CST/cClassTrib, CEST) para a Reforma Tributária.",
+  "author": { "name": "Treeunfe" }
+}

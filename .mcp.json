@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "treeunfe": {
+      "type": "http",
+      "url": "https://mcp.treeunfe.com.br/mcp"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "treeunfe",
+  "owner": { "name": "Treeunfe" },
+  "plugins": [
+    {
+      "name": "treeunfe",
+      "source": "./",
+      "description": "MCP da Treeunfe + classificação de produtos (NCM, CST/cClassTrib, CEST) para a Reforma Tributária"
+    }
+  ]
+}
